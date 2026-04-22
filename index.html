@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="circle circle--purple"></div>
+    <div class="circle circle--blue"></div>
+
+    <main class="currency-convertor">
+        <h1 class="currency-convertor-title">Currency Convertor</h1>
+        <input class="currency-convertor-input" placeholder="0" type="number" id="inputSourceCurrency">
+
+        <!-- Wrapper for currency input fields -->
+         <div class="currency-convertor-select-group">
+
+            <!-- Source currency input section -->
+             <section class="currency-convertor-select">
+                <img id="imageSourceCurrency" src="https://flagcdn.com/w640/us.png">
+                 <select id="selectSourceCurrency">
+                    <!-- <option value="USD">USD</option>
+                    <option value="IDR">IDR</option> -->
+                 </select>
+             </section>
+
+             <!-- Sepertor with Swap button -->
+
+             <button id="buttonSwap" class="currency-converter-swap-button">
+                <i class="bx bx-swap-horizontal"></i>
+             </button>
+
+             <!-- Target currency input section -->
+             <section class="currency-convertor-select">
+                <img id="imageTargetCurrency" src="https://flagcdn.com/w640/id.png">
+                 <select id="selectTargetCurrency">
+                    <!-- <option value="IDR">IDR</option>
+                    <option value="USD">USD</option> -->
+                 </select>
+             </section>
+
+         </div>
+         
+         <!-- Exchange rate information -->
+          <div class="currency-converter-exhange-rate">
+            <span id="exchangeRateText" class="currency-converter-exhange-rate-text">
+                0 USD = 0 IRD
+            </span>
+        </div>
+
+        <button id="buttonConvert" class="currency-converter-convert-button">
+            Convert
+        </button>
+    
+    </main>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
